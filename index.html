@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Srikanth BLV | Product-Minded Senior Software Engineer</title>
+<meta name="description" content="Case studies in voice reliability, Matter/Thread smart home, and observability across Android TV at 8M+ scale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6f3;--ink:#16202e;--mute:#5b6675;--line:#dcdad3;--acc:#1f5eff;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#0e131b;--ink:#e9edf3;--mute:#98a3b3;--line:#232c39;--acc:#6c9bff;--card:#141b26}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+header nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-size:15px}
+header nav a:hover,.logo{color:var(--ink)}
+.logo{font:700 18px 'Bricolage Grotesque',sans-serif;text-decoration:none}
+h1,h2,h3{font-family:'Bricolage Grotesque',Inter,sans-serif;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(38px,7vw,64px);margin:72px 0 24px;max-width:15em}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:12px}
+h3{font-size:22px;margin-bottom:8px}
+.lead{color:var(--mute);max-width:36em;font-size:19px}
+.status{margin-top:28px;font-size:15px;color:var(--mute)}
+.status::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb36d;margin-right:8px}
+.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.btn.p{background:var(--ink);color:var(--bg)}
+section{padding:80px 0 0}
+.intro{color:var(--mute);margin-bottom:36px;max-width:38em}
+.pillar{padding:28px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:24px}
+.pillar p{color:var(--mute)}
+.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:13px;padding:3px 11px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+details{border-top:1px solid var(--line);padding:22px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;color:var(--acc)}
+details[open] summary::after{content:"\2212"}
+summary small{display:block;color:var(--mute);font-size:14px}
+details .body{padding-top:14px;color:var(--mute);max-width:40em}
+.metric{font:700 40px 'Bricolage Grotesque',sans-serif;color:var(--acc)}
+.job{border-left:2px solid var(--acc);padding-left:20px}
+.job p,.row p{color:var(--mute)}
+.row{padding:18px 0;border-top:1px solid var(--line)}
+.cta{text-align:left;padding-bottom:80px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:14px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+@media(max-width:640px){.pillar{grid-template-columns:1fr}header nav a:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">Srikanth BLV</a>
+  <nav><a href="#work">Work</a><a href="#about">Experience</a><a href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+  <h1>Srikanth builds platforms that hold up for 8M+ users.</h1>
+  <p class="lead">Four years of end-to-end ownership on Android TV: voice, smart home, and field observability, shipped as 0→1 features on a fleet serving 8M+ users. Now moving into product management.</p>
+  <p class="status">Open to PM roles · Bengaluru, India</p>
+  <div class="btns">
+    <a class="btn p" href="#work">See my work</a>
+    <a class="btn" href="Srikanth_BLV_Resume.pdf">Download resume</a>
+  </div>
+
+  <section id="what">
+    <h2>Three things I keep coming back to</h2>
+    <p class="intro">Voice that works every time, a home that connects, and the data to know when something breaks.</p>
+    <div class="pillar"><div><h3>Voice & Assistant</h3></div><div><p>Owned the Google Assistant voice path from the audio HAL to Google's backend, taking it from unstable to production-grade at scale.</p><div class="tags"><span>Android TV / AOSP</span><span>Java</span><span>Kotlin</span></div></div></div>
+    <div class="pillar"><div><h3>Smart Home (Matter/Thread)</h3></div><div><p>Defining a native Home Assistant experience on Android TV from the ground up, working from partner requirements.</p><div class="tags"><span>Matter</span><span>Thread</span><span>PRD writing</span></div></div></div>
+    <div class="pillar"><div><h3>Observability</h3></div><div><p>Built field observability from scratch, plus real-time dashboards that executives use to see how the fleet is doing.</p><div class="tags"><span>Firebase</span><span>Grafana</span><span>Docker</span><span>Spring Boot</span></div></div></div>
+  </section>
+
+  <section id="work">
+    <h2>Case studies</h2>
+    <p class="intro">Open any case study for the detail.</p>
+    <details>
+      <summary><div><h3>Google Assistant & voice path ownership</h3><small>DISH Network · 8M+ users</small></div></summary>
+      <div class="body">Voice reliability overhaul, from an unstable state to production-grade scale. I was the end-to-end owner across the audio HAL and the Google backend. <br><br><em>Add here: the problem, what you changed, how you prioritized, and the result.</em></div>
+    </details>
+    <details>
+      <summary><div><h3>0→1 Matter / smart home integration</h3><small>DISH Network · In flight</small></div></summary>
+      <div class="body">A native Home Assistant experience on Android TV, defined from the ground up on Matter and Thread and shaped by partner requirements. <br><br><em>Add here: user problem, requirements you wrote, trade-offs, current status.</em></div>
+    </details>
+    <details>
+      <summary><div><h3>0→1 observability & operational efficiency</h3><small>DISH Network</small></div></summary>
+      <div class="body"><div class="metric">83%</div>reduction in Firebase Crashlytics issues. Field observability built from zero, with real-time dashboards for executives. <br><br><em>Add here: how you started, what you measured, what changed for the business.</em></div>
+    </details>
+    <details>
+      <summary><div><h3>Smart seeking in media playback</h3><small>Prototype · 2023</small></div></summary>
+      <div class="body">Voice-based seeking by actor, scene, dialogue, or genre, using NLU. A concept taken to a working prototype in Java and ExoPlayer. <br><br><em>Add here: why it matters for users and what you learned.</em></div>
+    </details>
+  </section>
+
+  <section id="about">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Senior Software Engineer, DISH Network</h3>
+      <p>4+ years owning Android TV platform features end to end: roadmap prioritization, PRDs, HLD/LLD, and cross-functional leadership across voice, smart home, and observability.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education & leadership</h2>
+    <div class="row"><h3>University of Virginia, Product Management Specialization</h3><p>August 2026. Discovery, prioritization frameworks, agile delivery, and product analytics.</p></div>
+    <div class="row"><h3>VNIT Nagpur, B.Tech in Electrical and Electronics Engineering</h3><p>July 2018 to May 2022.</p></div>
+    <div class="row"><h3>Co-founder, Samvad Debate & Discussion Club</h3><p>2019 to 2022. Ran structured discussions and events that built critical thinking and public speaking across campus.</p></div>
+    <div class="row"><h3>Student Mentor, VNIT</h3><p>2020 to 2022. Mentored 14 freshmen through their transition to college.</p></div>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>Let's build something worth shipping.</h2>
+    <p class="intro">Open to product management and platform-ownership conversations.</p>
+    <div class="btns">
+      <a class="btn p" href="mailto:blv.srikanth@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Srikanth BLV</footer>
+</div>
+</body>
+</html>
