@@ -3,128 +3,250 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Srikanth BLV | Product-Minded Senior Software Engineer</title>
-<meta name="description" content="Case studies in voice reliability, Matter/Thread smart home, and observability across Android TV at 8M+ scale.">
+<title>Srikanth BLV – Product Engineer</title>
+<meta name="description" content="Product Engineer with 4 years of end-to-end ownership across Android TV and OTT platforms: voice, observability, AI and smart-home integrations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f6f3;--ink:#16202e;--mute:#5b6675;--line:#dcdad3;--acc:#1f5eff;--card:#fff}
-@media(prefers-color-scheme:dark){:root{--bg:#0e131b;--ink:#e9edf3;--mute:#98a3b3;--line:#232c39;--acc:#6c9bff;--card:#141b26}}
+:root{--paper:#F3F5FA;--card:#fff;--ink:#101A3A;--muted:#566080;--line:#D8DDEB;--blue:#2748F5;--mint:#12A892;--tint:#E6EBFF;--wave:39,72,245}
+@media(prefers-color-scheme:dark){:root{--paper:#0E1430;--card:#161E42;--ink:#EEF1FF;--muted:#A3ACCB;--line:#27315E;--blue:#7C96FF;--mint:#3DD6BF;--tint:#212C5E;--wave:124,150,255}}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.65 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.05;letter-spacing:-.02em}
 a{color:inherit}
-.wrap{max-width:880px;margin:0 auto;padding:0 24px}
-header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
-header nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-size:15px}
-header nav a:hover,.logo{color:var(--ink)}
-.logo{font:700 18px 'Bricolage Grotesque',sans-serif;text-decoration:none}
-h1,h2,h3{font-family:'Bricolage Grotesque',Inter,sans-serif;line-height:1.1;letter-spacing:-.02em}
-h1{font-size:clamp(38px,7vw,64px);margin:72px 0 24px;max-width:15em}
-h2{font-size:clamp(26px,4vw,36px);margin-bottom:12px}
-h3{font-size:22px;margin-bottom:8px}
-.lead{color:var(--mute);max-width:36em;font-size:19px}
-.status{margin-top:28px;font-size:15px;color:var(--mute)}
-.status::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb36d;margin-right:8px}
-.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:11px 20px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:500;font-size:15px}
-.btn.p{background:var(--ink);color:var(--bg)}
-section{padding:80px 0 0}
-.intro{color:var(--mute);margin-bottom:36px;max-width:38em}
-.pillar{padding:28px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:24px}
-.pillar p{color:var(--mute)}
-.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-size:13px;padding:3px 11px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
-details{border-top:1px solid var(--line);padding:22px 0}
-details:last-of-type{border-bottom:1px solid var(--line)}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:26px;color:var(--acc)}
-details[open] summary::after{content:"\2212"}
-summary small{display:block;color:var(--mute);font-size:14px}
-details .body{padding-top:14px;color:var(--mute);max-width:40em}
-.metric{font:700 40px 'Bricolage Grotesque',sans-serif;color:var(--acc)}
-.job{border-left:2px solid var(--acc);padding-left:20px}
-.job p,.row p{color:var(--mute)}
-.row{padding:18px 0;border-top:1px solid var(--line)}
-.cta{text-align:left;padding-bottom:80px}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:14px}
-a:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-@media(max-width:640px){.pillar{grid-template-columns:1fr}header nav a:nth-child(n+4){display:none}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--paper) 82%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font:700 18px 'Bricolage Grotesque';letter-spacing:-.01em}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;font-size:15px;font-weight:500}
+nav ul a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--blue)}
+@media(max-width:720px){nav ul{display:none}}
+/* hero */
+.hero{padding:88px 0 0;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(56px,11vw,136px);font-weight:800;letter-spacing:-.045em}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(40px) rotate(2deg);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero .role{font:500 clamp(20px,2.6vw,28px)/1.3 'Bricolage Grotesque';color:var(--blue);margin:22px 0 18px;opacity:0;animation:rise .8s .5s forwards}
+.hero p.lead{max-width:640px;color:var(--muted);font-size:19px;opacity:0;animation:rise .8s .7s forwards}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;opacity:0;animation:rise .8s .9s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);transition:transform .2s,background .2s,color .2s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-3px)}
+.btn:not(.primary):hover{background:var(--ink);color:var(--paper)}
+#wave{display:block;width:100%;height:190px;margin-top:40px}
+.hint{font-size:13px;color:var(--muted);text-align:right;margin-top:-6px;padding-bottom:10px}
+/* sections */
+section{padding:96px 0}
+section h2{font-size:clamp(34px,5vw,56px);margin-bottom:12px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:44px}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:30px 22px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:800 clamp(38px,5vw,56px)/1 'Bricolage Grotesque';letter-spacing:-.04em;color:var(--blue)}
+.stat span{display:block;margin-top:8px;font-size:14px;color:var(--muted);line-height:1.4}
+/* timeline */
+.company{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:34px}
+.company h3{font-size:30px}
+.company span{color:var(--muted);font-weight:500}
+.rail{position:relative;padding-left:38px}
+.rail::before,.rail::after{content:"";position:absolute;left:11px;top:6px;width:2px;bottom:0;background:var(--line)}
+.rail::after{background:linear-gradient(var(--blue),var(--mint));height:calc(var(--p,0) * 100%);bottom:auto;transition:height .15s linear}
+.item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px;display:grid;grid-template-columns:84px 1fr;gap:24px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.item::before{content:"";position:absolute;left:-35px;top:34px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--blue)}
+.item:hover{transform:translateX(6px);border-color:var(--blue);box-shadow:0 18px 40px -22px rgba(var(--wave),.55)}
+.item h4{font:700 22px/1.2 'Bricolage Grotesque';letter-spacing:-.01em}
+.item small{display:block;color:var(--muted);margin:2px 0 10px;font-weight:500}
+.item ul{padding-left:18px;color:var(--muted)}
+.item li{margin:6px 0}
+.item li::marker{color:var(--blue)}
+.logo{width:84px;height:84px;border-radius:18px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.logo img{max-width:70%;max-height:70%;object-fit:contain}
+.logo .fb{display:none;font:800 24px 'Bricolage Grotesque';color:var(--blue)}
+.logo.nologo{background:var(--tint)}
+.logo.nologo img{display:none}
+.logo.nologo .fb,.logo.glyph .fb{display:block}
+.logo.glyph{background:var(--tint)}
+@media(max-width:620px){.item{grid-template-columns:1fr;padding:22px}.logo{width:64px;height:64px}.rail{padding-left:28px}.item::before{left:-25px}.rail::before,.rail::after{left:6px}}
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;position:relative;overflow:hidden;transition:transform .3s}
+.proj::after{content:"";position:absolute;inset:auto -40px -60px auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(rgba(var(--wave),.22),transparent 70%);transition:transform .5s}
+.proj:hover{transform:translateY(-6px)}
+.proj:hover::after{transform:scale(1.6)}
+.proj time{color:var(--muted);font-size:14px;font-weight:500}
+.proj h3{font-size:24px;margin:6px 0 12px}
+.proj p{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span,.chips span{font-size:13.5px;font-weight:500;padding:5px 13px;border-radius:999px;background:var(--tint);color:var(--ink)}
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px 44px}
+.skills h3{font-size:19px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{transition:background .2s,color .2s,transform .2s;cursor:default}
+.chips span:hover{background:var(--blue);color:var(--paper);transform:translateY(-2px)}
+/* education */
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.edu .item{grid-template-columns:84px 1fr;margin:0}
+.edu .item::before{display:none}
+.edu .item:hover{transform:translateY(-5px)}
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:28px;padding:64px 40px;text-align:center}
+.contact h2{margin-bottom:14px}
+.contact p{max-width:520px;margin:0 auto 28px;opacity:.8}
+.contact .btn{border-color:var(--paper);color:var(--paper)}
+.contact .btn.primary{background:var(--paper);color:var(--ink)}
+.contact .btn:not(.primary):hover{background:var(--paper);color:var(--ink)}
+.contact .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+footer{padding:36px 0 50px;text-align:center;color:var(--muted);font-size:14px}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 span,.hero .role,.hero p.lead,.hero .cta,.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <a class="logo" href="#top">Srikanth BLV</a>
-  <nav><a href="#work">Work</a><a href="#about">Experience</a><a href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a><a href="#contact">Contact</a></nav>
+<nav><div class="wrap"><b>Srikanth BLV</b>
+<ul><li><a href="#impact">Impact</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1 aria-label="Srikanth BLV"><span>Srikanth</span> <span style="animation-delay:.15s">BLV</span></h1>
+<p class="role">Product Engineer · Android TV, voice and smart home</p>
+<p class="lead">Four years of end-to-end ownership of B2B, B2C and SaaS products across Android TV and OTT platforms. I drive 0→1 initiatives from voice, audio and video to observability and Matter/Thread smart-home integrations, with a focus on system reliability, real-time observability and AI-driven operational efficiency.</p>
+<div class="cta"><a class="btn primary" href="mailto:blv.srikanth@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/srikanthviswanath" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="#experience">See my work</a></div>
+</div>
+<div class="wrap"><canvas id="wave" aria-hidden="true"></canvas><p class="hint">Move your cursor across the voice wave</p></div>
 </header>
 
-<main id="top">
-  <h1>Srikanth builds platforms that hold up for 8M+ users.</h1>
-  <p class="lead">Four years of end-to-end ownership on Android TV: voice, smart home, and field observability, shipped as 0→1 features on a fleet serving 8M+ users. Now moving into product management.</p>
-  <p class="status">Open to PM roles · Bengaluru, India</p>
-  <div class="btns">
-    <a class="btn p" href="#work">See my work</a>
-    <a class="btn" href="Srikanth_BLV_Resume.pdf">Download resume</a>
-  </div>
+<section id="impact"><div class="wrap">
+<h2 class="rv">Results I’ve shipped</h2>
+<p class="sub rv">Measured outcomes from the products I’ve owned at DISH Network.</p>
+<div class="stats rv">
+<div class="stat"><b data-to="70">0</b><span>less manual log-analysis effort with the LLM pipeline</span></div>
+<div class="stat"><b data-to="90">0</b><span>speech-to-text accuracy gain from the redesigned voice pipeline</span></div>
+<div class="stat"><b data-to="83">0</b><span>fewer Firebase Crashlytics issues</span></div>
+<div class="stat"><b data-to="60">0</b><span>less manual certification-testing effort</span></div>
+<div class="stat"><b data-to="40">0</b><span>fewer support calls</span></div>
+<div class="stat"><b data-to="30">0</b><span>higher voice adoption with offline voice search</span></div>
+</div></div></section>
 
-  <section id="what">
-    <h2>Three things I keep coming back to</h2>
-    <p class="intro">Voice that works every time, a home that connects, and the data to know when something breaks.</p>
-    <div class="pillar"><div><h3>Voice & Assistant</h3></div><div><p>Owned the Google Assistant voice path from the audio HAL to Google's backend, taking it from unstable to production-grade at scale.</p><div class="tags"><span>Android TV / AOSP</span><span>Java</span><span>Kotlin</span></div></div></div>
-    <div class="pillar"><div><h3>Smart Home (Matter/Thread)</h3></div><div><p>Defining a native Home Assistant experience on Android TV from the ground up, working from partner requirements.</p><div class="tags"><span>Matter</span><span>Thread</span><span>PRD writing</span></div></div></div>
-    <div class="pillar"><div><h3>Observability</h3></div><div><p>Built field observability from scratch, plus real-time dashboards that executives use to see how the fleet is doing.</p><div class="tags"><span>Firebase</span><span>Grafana</span><span>Docker</span><span>Spring Boot</span></div></div></div>
-  </section>
+<section id="experience" style="padding-top:20px"><div class="wrap">
+<h2 class="rv">Experience</h2>
+<div class="company rv"><h3>DISH Network · Product Engineer</h3><span>June 2022 – Present · Bengaluru, India</span></div>
+<div class="rail" id="rail">
 
-  <section id="work">
-    <h2>Case studies</h2>
-    <p class="intro">Open any case study for the detail.</p>
-    <details>
-      <summary><div><h3>Google Assistant & voice path ownership</h3><small>DISH Network · 8M+ users</small></div></summary>
-      <div class="body">Voice reliability overhaul, from an unstable state to production-grade scale. I was the end-to-end owner across the audio HAL and the Google backend. <br><br><em>Add here: the problem, what you changed, how you prioritized, and the result.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>0→1 Matter / smart home integration</h3><small>DISH Network · In flight</small></div></summary>
-      <div class="body">A native Home Assistant experience on Android TV, defined from the ground up on Matter and Thread and shaped by partner requirements. <br><br><em>Add here: user problem, requirements you wrote, trade-offs, current status.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>0→1 observability & operational efficiency</h3><small>DISH Network</small></div></summary>
-      <div class="body"><div class="metric">83%</div>reduction in Firebase Crashlytics issues. Field observability built from zero, with real-time dashboards for executives. <br><br><em>Add here: how you started, what you measured, what changed for the business.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>Smart seeking in media playback</h3><small>Prototype · 2023</small></div></summary>
-      <div class="body">Voice-based seeking by actor, scene, dialogue, or genre, using NLU. A concept taken to a working prototype in Java and ExoPlayer. <br><br><em>Add here: why it matters for users and what you learned.</em></div>
-    </details>
-  </section>
+<article class="item rv"><div class="logo glyph"><span class="fb">AI</span></div><div>
+<h4>Automated AI-Based Log Analysis Pipeline</h4><small>August 2026</small>
+<ul><li>Built an automated, LLM-based log analysis and RCA pipeline that reduced manual analysis effort by 70%.</li><li>Built the roadmap for the pipeline, wrote agile user stories and acceptance criteria, and drove sprint execution.</li></ul></div></article>
 
-  <section id="about">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Senior Software Engineer, DISH Network</h3>
-      <p>4+ years owning Android TV platform features end to end: roadmap prioritization, PRDs, HLD/LLD, and cross-functional leadership across voice, smart home, and observability.</p>
-    </div>
-  </section>
+<article class="item rv"><div class="logo glyph"><span class="fb">ASR</span></div><div>
+<h4>Offline Voice Search (On-Device Speech Recognition)</h4><small>Whisper · Android TV</small>
+<ul><li>Prototyped an AI-based offline speech recognition engine using Whisper, enabling voice search without internet and increasing user voice adoption by 30%.</li></ul></div></article>
 
-  <section>
-    <h2>Education & leadership</h2>
-    <div class="row"><h3>University of Virginia, Product Management Specialization</h3><p>August 2026. Discovery, prioritization frameworks, agile delivery, and product analytics.</p></div>
-    <div class="row"><h3>VNIT Nagpur, B.Tech in Electrical and Electronics Engineering</h3><p>July 2018 to May 2022.</p></div>
-    <div class="row"><h3>Co-founder, Samvad Debate & Discussion Club</h3><p>2019 to 2022. Ran structured discussions and events that built critical thinking and public speaking across campus.</p></div>
-    <div class="row"><h3>Student Mentor, VNIT</h3><p>2020 to 2022. Mentored 14 freshmen through their transition to college.</p></div>
-  </section>
+<article class="item rv"><div class="logo"><img data-folder="Google Assistant" alt="Google Assistant logo"><span class="fb">GA</span></div><div>
+<h4>Google Assistant Voice Search on Android TV</h4><small>Audio HAL · Remote microphone · Google backend</small>
+<ul><li>Owned end-to-end across Audio HAL, remote microphone, and Google backend, taking voice from unstable to production-grade.</li><li>Customised search results based on user context to deliver more relevant voice search outcomes.</li><li>Redesigned the voice pipeline, increasing speech-to-text accuracy by 90%.</li><li>Partnered with support and sales to understand customer pain points and fix bugs, cutting support calls by 40%.</li></ul></div></article>
 
-  <section id="contact" class="cta">
-    <h2>Let's build something worth shipping.</h2>
-    <p class="intro">Open to product management and platform-ownership conversations.</p>
-    <div class="btns">
-      <a class="btn p" href="mailto:blv.srikanth@gmail.com">Email me</a>
-      <a class="btn" href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a>
-    </div>
-  </section>
-</main>
-<footer>© 2026 Srikanth BLV</footer>
-</div>
+<article class="item rv"><div class="logo"><img data-folder="Matter" alt="Matter logo"><span class="fb">M</span></div><div>
+<h4>Matter / Thread IoT Smart Home on Android TV</h4><small>0→1 initiative</small>
+<ul><li>Drove a 0→1 Matter/Thread integration for a native Home Assistant experience, defining architecture, partners, and rollout.</li><li>Built the roadmap for delivering the Matter SDK and a pipeline for building it from open source.</li><li>Ran certification tests for legal approval and automated the test suite, reducing manual effort by 60%.</li></ul></div></article>
+
+<article class="item rv"><div class="logo"><img data-folder="Firebase" alt="Firebase logo"><span class="fb">FB</span></div><div>
+<h4>Observability / Analytics</h4><small>Firebase · Crashlytics · RTR · Grafana</small>
+<ul><li>Built Firebase Performance Monitoring, Crashlytics, and Analytics from 0→1 across Android TV, establishing field observability and defining health metrics with Product.</li><li>Built executive-facing observability into the voice path via Real-Time Reporting (RTR) and Grafana dashboards, turning failure signals into metrics stakeholders can act on.</li><li>Drove an 83% reduction in Firebase Crashlytics issues by coordinating triage across Engineering, QA, and Product.</li></ul></div></article>
+
+<article class="item rv"><div class="logo glyph"><span class="fb">+</span></div><div>
+<h4>Other Contributions</h4><small>Media3 / ExoPlayer · Product partnership</small>
+<ul><li>Implemented Closed Captions during media playback using Media3/ExoPlayer on Android TV.</li><li>Acted as the technical bridge between Engineering and Product by writing feature specs and presenting platform health summaries to drive roadmap decisions.</li></ul></div></article>
+</div></div></section>
+
+<section id="projects" style="padding-top:20px"><div class="wrap">
+<h2 class="rv">Projects</h2>
+<p class="sub rv">Side builds that explore product ideas and research.</p>
+<div class="grid">
+<article class="proj rv"><time>October 2023</time><h3>Smart Seeking in Android Playback</h3><p>Prototyped voice-based seeking by actor, scene, dialogue, or genre, showing product thinking in natural-language UX.</p><div class="tags"><span>Java</span><span>Android</span><span>ExoPlayer</span><span>NLU</span></div></article>
+<article class="proj rv"><time>April 2022</time><h3>Optimal Allocation of Loading in Smart Grid</h3><p>A game-theoretic approach: proposed a methodology for optimal placement of distributed generation in smart grids, balancing performance and cost.</p><div class="tags"><span>Game Theory</span><span>MATLAB</span><span>Simulink</span></div></article>
+</div></div></section>
+
+<section id="skills" style="padding-top:20px"><div class="wrap">
+<h2 class="rv">Skills and technologies</h2><p class="sub rv">Product craft and platform depth in one toolkit.</p>
+<div class="skills">
+<div class="rv"><h3>Product and strategy</h3><div class="chips"><span>0→1 Initiatives</span><span>Roadmap Prioritization</span><span>User Stories</span><span>Acceptance Criteria</span><span>Sprint Planning</span><span>PRD</span><span>HLD/LLD</span></div></div>
+<div class="rv"><h3>PM tools and analytics</h3><div class="chips"><span>Jira</span><span>Agile</span><span>Figma</span><span>Google Analytics</span><span>Funnel Analytics</span><span>Market Research</span></div></div>
+<div class="rv"><h3>Observability and dashboards</h3><div class="chips"><span>Firebase Performance Monitoring</span><span>Crashlytics</span><span>Firebase Analytics</span><span>RTR (Real-Time Reporting)</span><span>Grafana</span></div></div>
+<div class="rv"><h3>AI and automation</h3><div class="chips"><span>LLM Integration</span><span>RAG Pipelines</span><span>MCP</span><span>Prompt Engineering</span><span>LLM Log Analysis</span><span>Automated RCA</span><span>Whisper</span></div></div>
+<div class="rv"><h3>Android and platform</h3><div class="chips"><span>Android TV</span><span>STB</span><span>OTT</span><span>AOSP</span><span>Audio HAL</span><span>Media3/ExoPlayer</span><span>Voice Path</span><span>Matter/Thread</span><span>AIDL</span><span>HIDL</span></div></div>
+<div class="rv"><h3>Engineering</h3><div class="chips"><span>Java</span><span>Kotlin</span><span>C</span><span>C++</span><span>Spring Boot</span><span>Docker</span><span>MongoDB</span><span>SQL</span><span>REST APIs</span><span>OOPs</span><span>SOLID</span><span>DSA</span></div></div>
+<div class="rv"><h3>Testing and tools</h3><div class="chips"><span>JUnit</span><span>Mockito</span><span>CI/CD Pipelines</span><span>Jenkins</span><span>Android Studio</span><span>Git</span><span>GitHub</span><span>Gradle</span><span>VS Code</span></div></div>
+</div></div></section>
+
+<section id="education" style="padding-top:20px"><div class="wrap">
+<h2 class="rv">Education</h2><p class="sub rv">Engineering foundations, plus formal product training.</p>
+<div class="edu">
+<article class="item rv"><div class="logo"><img data-folder="VNIT" alt="VNIT logo"><span class="fb">VNIT</span></div><div><h4>Visvesvaraya National Institute of Technology (VNIT)</h4><small>Nagpur, Maharashtra · July 2018 – May 2022</small><ul><li>Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering</li><li>CGPA: 8.52/10</li></ul></div></article>
+<article class="item rv"><div class="logo"><img data-folder="UVA" alt="University of Virginia logo"><span class="fb">UVA</span></div><div><h4>University of Virginia</h4><small>Product Management Specialization</small><ul><li>Product management training that complements my engineering background.</li></ul></div></article>
+</div></div></section>
+
+<section id="contact" style="padding-top:20px"><div class="wrap"><div class="contact rv">
+<h2>Let’s build something people use</h2>
+<p>I’m open to product conversations and opportunities. Reach out by email or connect on LinkedIn.</p>
+<div class="cta"><a class="btn primary" href="mailto:blv.srikanth@gmail.com">blv.srikanth@gmail.com</a><a class="btn" href="https://linkedin.com/in/srikanthviswanath" target="_blank" rel="noopener">linkedin.com/in/srikanthviswanath</a></div>
+<p style="margin:26px 0 0;font-size:15px">Bengaluru, India</p>
+</div></div></section>
+<footer>© <span id="yr"></span> Srikanth BLV</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* logos: looks for <folder>/logo.(png|svg|jpg|jpeg|webp); falls back to a monogram tile */
+document.querySelectorAll('img[data-folder]').forEach(img=>{
+  const exts=['png','svg','jpg','jpeg','webp'];let i=0;
+  const src=n=>encodeURI(img.dataset.folder+'/logo.'+exts[n]);
+  img.onerror=()=>{i++;if(i<exts.length)img.src=src(i);else img.parentElement.classList.add('nologo')};
+  img.src=src(0);
+});
+
+/* reveal + counters */
+const countUp=el=>{const to=+el.dataset.to,t0=performance.now();
+  const f=t=>{const p=Math.min((t-t0)/1400,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+'%';if(p<1)requestAnimationFrame(f)};
+  reduce?el.textContent=to+'%':requestAnimationFrame(f)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+  e.target.querySelectorAll('[data-to]').forEach(countUp);io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* timeline progress */
+const rail=document.getElementById('rail');
+const prog=()=>{const r=rail.getBoundingClientRect(),h=innerHeight;
+  rail.style.setProperty('--p',Math.max(0,Math.min(1,(h*.6-r.top)/r.height)))};
+addEventListener('scroll',prog,{passive:true});prog();
+
+/* voice wave */
+const cv=document.getElementById('wave'),ctx=cv.getContext('2d');
+let W,H,mx=.5,amp=.35,tAmp=.35,vis=true;
+const size=()=>{const d=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)};
+size();addEventListener('resize',size);
+cv.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mx=(e.clientX-r.left)/r.width;tAmp=1});
+cv.addEventListener('pointerleave',()=>tAmp=.35);
+new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(cv);
+const col=()=>getComputedStyle(document.documentElement).getPropertyValue('--wave').trim();
+function draw(t){
+  requestAnimationFrame(draw);if(!vis)return;
+  amp+=(tAmp-amp)*.06;ctx.clearRect(0,0,W,H);
+  const n=Math.floor(W/9),c=col(),s=t/1000;
+  for(let i=0;i<n;i++){
+    const x=i/(n-1),env=.35+.65*Math.exp(-Math.pow((x-mx)*3.2,2));
+    const v=(Math.sin(x*14+s*2.1)+Math.sin(x*29-s*1.6)*.6+Math.sin(x*5+s*.9)*.8)/2.4;
+    const h=Math.max(4,Math.abs(v)*H*.9*amp*env+4);
+    ctx.fillStyle='rgba('+c+','+(.25+.75*env)+')';
+    ctx.beginPath();ctx.roundRect(i*(W/n)+1,(H-h)/2,Math.max(3,W/n-3),h,3);ctx.fill();
+  }
+}
+reduce?(amp=.5,draw(0),vis=false):requestAnimationFrame(draw);
+</script>
 </body>
 </html>
