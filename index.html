@@ -1,130 +1,869 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Srikanth BLV | Product-Minded Senior Software Engineer</title>
-<meta name="description" content="Case studies in voice reliability, Matter/Thread smart home, and observability across Android TV at 8M+ scale.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f7f6f3;--ink:#16202e;--mute:#5b6675;--line:#dcdad3;--acc:#1f5eff;--card:#fff}
-@media(prefers-color-scheme:dark){:root{--bg:#0e131b;--ink:#e9edf3;--mute:#98a3b3;--line:#232c39;--acc:#6c9bff;--card:#141b26}}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif}
-a{color:inherit}
-.wrap{max-width:880px;margin:0 auto;padding:0 24px}
-header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
-header nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-size:15px}
-header nav a:hover,.logo{color:var(--ink)}
-.logo{font:700 18px 'Bricolage Grotesque',sans-serif;text-decoration:none}
-h1,h2,h3{font-family:'Bricolage Grotesque',Inter,sans-serif;line-height:1.1;letter-spacing:-.02em}
-h1{font-size:clamp(38px,7vw,64px);margin:72px 0 24px;max-width:15em}
-h2{font-size:clamp(26px,4vw,36px);margin-bottom:12px}
-h3{font-size:22px;margin-bottom:8px}
-.lead{color:var(--mute);max-width:36em;font-size:19px}
-.status{margin-top:28px;font-size:15px;color:var(--mute)}
-.status::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb36d;margin-right:8px}
-.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:11px 20px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:500;font-size:15px}
-.btn.p{background:var(--ink);color:var(--bg)}
-section{padding:80px 0 0}
-.intro{color:var(--mute);margin-bottom:36px;max-width:38em}
-.pillar{padding:28px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:24px}
-.pillar p{color:var(--mute)}
-.tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-size:13px;padding:3px 11px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
-details{border-top:1px solid var(--line);padding:22px 0}
-details:last-of-type{border-bottom:1px solid var(--line)}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:26px;color:var(--acc)}
-details[open] summary::after{content:"\2212"}
-summary small{display:block;color:var(--mute);font-size:14px}
-details .body{padding-top:14px;color:var(--mute);max-width:40em}
-.metric{font:700 40px 'Bricolage Grotesque',sans-serif;color:var(--acc)}
-.job{border-left:2px solid var(--acc);padding-left:20px}
-.job p,.row p{color:var(--mute)}
-.row{padding:18px 0;border-top:1px solid var(--line)}
-.cta{text-align:left;padding-bottom:80px}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:14px}
-a:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-@media(max-width:640px){.pillar{grid-template-columns:1fr}header nav a:nth-child(n+4){display:none}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header>
-  <a class="logo" href="#top">Srikanth BLV</a>
-  <nav><a href="#work">Work</a><a href="#about">Experience</a><a href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a><a href="#contact">Contact</a></nav>
-</header>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srikanth BLV — Product Engineer</title>
+  <meta name="description" content="Portfolio of Srikanth BLV — Product Engineer specializing in 0→1 initiatives across Android TV, OTT, Voice AI, Matter/Thread IoT, and Observability." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-<main id="top">
-  <h1>Srikanth builds platforms that hold up for 8M+ users.</h1>
-  <p class="lead">Four years of end-to-end ownership on Android TV: voice, smart home, and field observability, shipped as 0→1 features on a fleet serving 8M+ users. Now moving into product management.</p>
-  <p class="status">Open to PM roles · Bengaluru, India</p>
-  <div class="btns">
-    <a class="btn p" href="#work">See my work</a>
-    <a class="btn" href="Srikanth_BLV_Resume.pdf">Download resume</a>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              bg: '#07090E',
+              surface: '#0F131E',
+              card: '#131826',
+              border: 'rgba(255, 255, 255, 0.08)',
+              accent: '#38BDF8',
+              indigo: '#818CF8',
+              emerald: '#34D399'
+            }
+          },
+          animation: {
+            'blob': 'blob 10s infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            blob: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '33%': { transform: 'translate(30px, -40px) scale(1.08)' },
+              '66%': { transform: 'translate(-20px, 20px) scale(0.94)' },
+              '100%': { transform: 'translate(0px, 0px) scale(1)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #07090E;
+      color: #F8FAFC;
+      overflow-x: hidden;
+    }
+
+    /* Subtle architectural grid background */
+    .bg-grid {
+      background-size: 48px 48px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    }
+
+    /* Glassmorphism surfaces */
+    .glass {
+      background: rgba(15, 19, 30, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: linear-gradient(145deg, rgba(22, 28, 45, 0.75) 0%, rgba(13, 17, 28, 0.85) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 20px 40px -15px rgba(2, 6, 23, 0.8), 0 0 24px -6px rgba(56, 189, 248, 0.15);
+    }
+
+    /* Text Gradient */
+    .text-gradient {
+      background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-accent {
+      background: linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #34D399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07090E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+
+    /* Logo Container */
+    .logo-badge {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover .logo-badge {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-grid antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+  <!-- Ambient Background Glows -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-sky-500/15 rounded-full blur-[120px] animate-blob"></div>
+    <div class="absolute top-1/3 -right-32 w-[28rem] h-[28rem] bg-indigo-500/15 rounded-full blur-[130px] animate-blob" style="animation-delay: 2s;"></div>
+    <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] animate-blob" style="animation-delay: 4s;"></div>
   </div>
 
-  <section id="what">
-    <h2>Three things I keep coming back to</h2>
-    <p class="intro">Voice that works every time, a home that connects, and the data to know when something breaks.</p>
-    <div class="pillar"><div><h3>Voice & Assistant</h3></div><div><p>Owned the Google Assistant voice path from the audio HAL to Google's backend, taking it from unstable to production-grade at scale.</p><div class="tags"><span>Android TV / AOSP</span><span>Java</span><span>Kotlin</span></div></div></div>
-    <div class="pillar"><div><h3>Smart Home (Matter/Thread)</h3></div><div><p>Defining a native Home Assistant experience on Android TV from the ground up, working from partner requirements.</p><div class="tags"><span>Matter</span><span>Thread</span><span>PRD writing</span></div></div></div>
-    <div class="pillar"><div><h3>Observability</h3></div><div><p>Built field observability from scratch, plus real-time dashboards that executives use to see how the fleet is doing.</p><div class="tags"><span>Firebase</span><span>Grafana</span><span>Docker</span><span>Spring Boot</span></div></div></div>
-  </section>
+  <!-- Navigation Header -->
+  <header class="fixed top-0 inset-x-0 z-50 glass border-b border-white/5 transition-all duration-300" id="navbar">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-sky-400 to-indigo-500 flex items-center justify-center text-slate-950 font-bold text-sm shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          SB
+        </div>
+        <span class="font-bold tracking-tight text-slate-100 text-lg">Srikanth <span class="text-sky-400">BLV</span></span>
+      </a>
 
-  <section id="work">
-    <h2>Case studies</h2>
-    <p class="intro">Open any case study for the detail.</p>
-    <details>
-      <summary><div><h3>Google Assistant & voice path ownership</h3><small>DISH Network · 8M+ users</small></div></summary>
-      <div class="body">Voice reliability overhaul, from an unstable state to production-grade scale. I was the end-to-end owner across the audio HAL and the Google backend. <br><br><em>Add here: the problem, what you changed, how you prioritized, and the result.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>0→1 Matter / smart home integration</h3><small>DISH Network · In flight</small></div></summary>
-      <div class="body">A native Home Assistant experience on Android TV, defined from the ground up on Matter and Thread and shaped by partner requirements. <br><br><em>Add here: user problem, requirements you wrote, trade-offs, current status.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>0→1 observability & operational efficiency</h3><small>DISH Network</small></div></summary>
-      <div class="body"><div class="metric">83%</div>reduction in Firebase Crashlytics issues. Field observability built from zero, with real-time dashboards for executives. <br><br><em>Add here: how you started, what you measured, what changed for the business.</em></div>
-    </details>
-    <details>
-      <summary><div><h3>Smart seeking in media playback</h3><small>Prototype · 2023</small></div></summary>
-      <div class="body">Voice-based seeking by actor, scene, dialogue, or genre, using NLU. A concept taken to a working prototype in Java and ExoPlayer. <br><br><em>Add here: why it matters for users and what you learned.</em></div>
-    </details>
-  </section>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#impact" class="hover:text-white transition-colors">Impact</a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#education" class="hover:text-white transition-colors">Education</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+      </nav>
 
-  <section id="about">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Senior Software Engineer, DISH Network</h3>
-      <p>4+ years owning Android TV platform features end to end: roadmap prioritization, PRDs, HLD/LLD, and cross-functional leadership across voice, smart home, and observability.</p>
+      <div class="flex items-center gap-3">
+        <a href="mailto:blv.srikanth@gmail.com" class="px-4 py-2 rounded-lg bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 text-sm font-medium transition-all flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-4xl">
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full glass border border-sky-500/20 text-xs font-mono text-sky-300 mb-6 reveal">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+          </span>
+          <span>Bengaluru, India &bull; 4+ Years 0&rarr;1 Product &amp; Platform Ownership</span>
+        </div>
+
+        <!-- Name & Title -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.08] mb-6 reveal reveal-delay-1">
+          <span class="text-gradient">Srikanth BLV</span><br />
+          <span class="text-gradient-accent">Product Engineer</span>
+        </h1>
+
+        <!-- Executive Summary -->
+        <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mb-10 font-normal reveal reveal-delay-2">
+          Product Engineer with 4 years of end-to-end ownership of B2B / B2C / SaaS products across <span class="text-white font-medium">Android TV / OTT platforms</span>, driving <span class="text-sky-400 font-medium">0&rarr;1 feature initiatives</span> from Voice/Audio/Video and Observability to emerging <span class="text-indigo-400 font-medium">IoT Matter/Thread</span> smart-home integrations. Skilled at cross-functional collaboration across Product, Design, QA, and Engineering teams, with a strong focus on system reliability, real-time observability, and AI-driven operational efficiency.
+        </p>
+
+        <!-- Action Links (Phone Number Excluded) -->
+        <div class="flex flex-wrap items-center gap-4 reveal reveal-delay-3">
+          <a href="#experience" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-sky-500/25 transition-all flex items-center gap-2">
+            <span>Explore Experience</span>
+            <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/srikanthviswanath" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl glass hover:bg-white/5 text-slate-200 font-medium text-sm transition-all flex items-center gap-2.5">
+            <i data-lucide="linkedin" class="w-4 h-4 text-sky-400"></i>
+            <span>linkedin.com/in/srikanthviswanath</span>
+          </a>
+
+          <a href="mailto:blv.srikanth@gmail.com" class="px-5 py-3.5 rounded-xl glass hover:bg-white/5 text-slate-200 font-medium text-sm transition-all flex items-center gap-2.5">
+            <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+            <span>blv.srikanth@gmail.com</span>
+          </a>
+
+          <a href="https://srikvis.github.io/srikanth.blv.github.io/" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl glass hover:bg-white/5 text-slate-200 font-medium text-sm transition-all flex items-center gap-2.5">
+            <i data-lucide="globe" class="w-4 h-4 text-indigo-400"></i>
+            <span>srikanth-portfolio</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Education & leadership</h2>
-    <div class="row"><h3>University of Virginia, Product Management Specialization</h3><p>August 2026. Discovery, prioritization frameworks, agile delivery, and product analytics.</p></div>
-    <div class="row"><h3>VNIT Nagpur, B.Tech in Electrical and Electronics Engineering</h3><p>July 2018 to May 2022.</p></div>
-    <div class="row"><h3>Co-founder, Samvad Debate & Discussion Club</h3><p>2019 to 2022. Ran structured discussions and events that built critical thinking and public speaking across campus.</p></div>
-    <div class="row"><h3>Student Mentor, VNIT</h3><p>2020 to 2022. Mentored 14 freshmen through their transition to college.</p></div>
-  </section>
+  <!-- Key Impact Metrics Bar -->
+  <section id="impact" class="py-10 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="glass-card rounded-2xl p-5 reveal">
+          <div class="text-3xl md:text-4xl font-extrabold text-sky-400 font-mono mb-1">
+            <span class="counter" data-target="90">0</span>%
+          </div>
+          <div class="text-xs font-medium text-slate-300">Speech-to-Text Accuracy Lift</div>
+          <div class="text-[11px] text-slate-500 mt-1">Voice pipeline redesign</div>
+        </div>
 
-  <section id="contact" class="cta">
-    <h2>Let's build something worth shipping.</h2>
-    <p class="intro">Open to product management and platform-ownership conversations.</p>
-    <div class="btns">
-      <a class="btn p" href="mailto:blv.srikanth@gmail.com">Email me</a>
-      <a class="btn" href="https://www.linkedin.com/in/srikanthviswanath">LinkedIn</a>
+        <div class="glass-card rounded-2xl p-5 reveal reveal-delay-1">
+          <div class="text-3xl md:text-4xl font-extrabold text-emerald-400 font-mono mb-1">
+            <span class="counter" data-target="83">0</span>%
+          </div>
+          <div class="text-xs font-medium text-slate-300">Crashlytics Issue Reduction</div>
+          <div class="text-[11px] text-slate-500 mt-1">Cross-functional triage</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 reveal reveal-delay-2">
+          <div class="text-3xl md:text-4xl font-extrabold text-indigo-400 font-mono mb-1">
+            <span class="counter" data-target="70">0</span>%
+          </div>
+          <div class="text-xs font-medium text-slate-300">Less Manual Log Analysis</div>
+          <div class="text-[11px] text-slate-500 mt-1">LLM-based RCA pipeline</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 reveal reveal-delay-3">
+          <div class="text-3xl md:text-4xl font-extrabold text-amber-400 font-mono mb-1">
+            <span class="counter" data-target="60">0</span>%
+          </div>
+          <div class="text-xs font-medium text-slate-300">QA Certification Effort Saved</div>
+          <div class="text-[11px] text-slate-500 mt-1">Automated Matter test suite</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 col-span-2 lg:col-span-1 reveal reveal-delay-3">
+          <div class="text-3xl md:text-4xl font-extrabold text-rose-400 font-mono mb-1">
+            <span class="counter" data-target="40">0</span>%
+          </div>
+          <div class="text-xs font-medium text-slate-300">Drop in Support Calls</div>
+          <div class="text-[11px] text-slate-500 mt-1">&amp; +30% offline voice adoption</div>
+        </div>
+      </div>
     </div>
   </section>
-</main>
-<footer>© 2026 Srikanth BLV</footer>
-</div>
+
+  <!-- Professional Experience Section -->
+  <section id="experience" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block mb-2">Career &amp; Product Ownership</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Professional Experience</h2>
+        </div>
+        <div class="mt-4 md:mt-0 glass px-4 py-2.5 rounded-xl flex items-center gap-3">
+          <div class="w-2.5 h-2.5 rounded-full bg-sky-400"></div>
+          <div>
+            <span class="font-bold text-white text-sm">DISH Network</span>
+            <span class="text-slate-400 text-sm"> &bull; Product Engineer</span>
+          </div>
+          <span class="text-xs font-mono text-slate-400 border-l border-white/10 pl-3">June 2022 &ndash; Present &bull; Bengaluru, India</span>
+        </div>
+      </div>
+
+      <!-- Initiative Cards Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- 1. Automated AI-Based Log Analysis Pipeline -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center text-sky-400 shrink-0">
+                  <i data-lucide="bot" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-sky-400">AI &amp; Operational Efficiency</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Automated AI-Based Log Analysis Pipeline</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-300 font-mono text-xs shrink-0">-70% Effort</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400 shrink-0 mt-1"></i>
+                <span>Built an automated, LLM-based log analysis and RCA pipeline that reduced manual analysis effort by <strong class="text-white">70%</strong>.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-400 shrink-0 mt-1"></i>
+                <span>Built the roadmap for the pipeline, wrote agile user stories and acceptance criteria, and drove sprint execution.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">LLM Integration</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Automated RCA</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Product Roadmap</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Agile Execution</span>
+          </div>
+        </article>
+
+        <!-- 2. Google Assistant Voice Search on Android TV -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal reveal-delay-1">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <!-- Dynamic Logo Loader for Google Assistant -->
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center p-2 shrink-0 overflow-hidden" data-logo-folder="Google Assistant" data-fallback-icon="mic">
+                  <i data-lucide="mic" class="w-6 h-6 text-indigo-400"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-indigo-400">Voice &amp; Audio Platform</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Google Assistant Voice Search on Android TV</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 font-mono text-xs shrink-0">+90% STT</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0 mt-1"></i>
+                <span>Owned end-to-end across Audio HAL, remote microphone, and Google backend, taking voice from unstable to production-grade.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0 mt-1"></i>
+                <span>Customised search results based on user context to deliver more relevant voice search outcomes.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0 mt-1"></i>
+                <span>Redesigned the voice pipeline, increasing speech-to-text accuracy by <strong class="text-white">90%</strong>.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400 shrink-0 mt-1"></i>
+                <span>Partnered with support and sales to understand customer pain points and fix bugs, cutting support calls by <strong class="text-white">40%</strong>.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Google Assistant</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Audio HAL</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Android TV</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Voice Path</span>
+          </div>
+        </article>
+
+        <!-- 3. Matter / Thread IoT Smart Home on Android TV -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <!-- Dynamic Logo Loader for Matter -->
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center p-2 shrink-0 overflow-hidden" data-logo-folder="Matter" data-fallback-icon="cpu">
+                  <i data-lucide="cpu" class="w-6 h-6 text-emerald-400"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-400">0&rarr;1 Smart Home Ecosystem</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Matter / Thread IoT Smart Home on Android TV</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 font-mono text-xs shrink-0">0&rarr;1 Launch</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-1"></i>
+                <span>Drove a 0&rarr;1 Matter/Thread integration for a native Home Assistant experience, defining architecture, partners, and rollout.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-1"></i>
+                <span>Built the roadmap for delivering the Matter SDK and a pipeline for building it from open source.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-1"></i>
+                <span>Ran certification tests for legal approval and automated the test suite, reducing manual effort by <strong class="text-white">60%</strong>.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Matter / Thread</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">IoT Smart Home</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Matter SDK</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Certification Automation</span>
+          </div>
+        </article>
+
+        <!-- 4. Observability / Analytics -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal reveal-delay-1">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <!-- Dynamic Logo Loader for Firebase -->
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center p-2 shrink-0 overflow-hidden" data-logo-folder="Firebase" data-fallback-icon="activity">
+                  <i data-lucide="activity" class="w-6 h-6 text-amber-400"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-amber-400">Telemetry &amp; Platform Health</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Observability &amp; Analytics</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-300 font-mono text-xs shrink-0">-83% Crashes</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-1"></i>
+                <span>Built Firebase Performance Monitoring, Crashlytics, and Analytics from 0&rarr;1 across Android TV, establishing field observability and defining health metrics with Product.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-1"></i>
+                <span>Built executive-facing observability into the voice path via Real-Time Reporting (RTR) and Grafana dashboards, turning failure signals into metrics stakeholders can act on.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-1"></i>
+                <span>Drove an <strong class="text-white">83%</strong> reduction in Firebase Crashlytics issues by coordinating triage across Engineering, QA, and Product.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Firebase Crashlytics</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Grafana</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Real-Time Reporting</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Health Metrics</span>
+          </div>
+        </article>
+
+        <!-- 5. Offline Voice Search -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center text-rose-400 shrink-0">
+                  <i data-lucide="audio-waveform" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-rose-400">Edge AI &amp; Speech</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Offline Voice Search (On-Device Speech Recognition)</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-rose-500/10 border border-rose-500/20 text-rose-300 font-mono text-xs shrink-0">+30% Adoption</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-400 shrink-0 mt-1"></i>
+                <span>Prototyped an AI-based offline speech recognition engine using <strong class="text-white">Whisper</strong>, enabling voice search without internet, increasing user voice adoption by <strong class="text-white">30%</strong>.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">OpenAI Whisper</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">On-Device AI</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Offline ASR</span>
+          </div>
+        </article>
+
+        <!-- 6. Other Contributions -->
+        <article class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal reveal-delay-1">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl logo-badge flex items-center justify-center text-cyan-400 shrink-0">
+                  <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-cyan-400">Media Playback &amp; Strategy</span>
+                  <h3 class="text-lg font-bold text-white leading-snug">Media Playback &amp; Product Alignment</h3>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 font-mono text-xs shrink-0">Core OTT</span>
+            </div>
+
+            <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-1"></i>
+                <span>Implemented Closed Captions during media playback using <strong class="text-white">Media3/ExoPlayer</strong> on Android TV.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-1"></i>
+                <span>Acted as the technical bridge between Engineering and Product by writing feature specs and presenting platform health summaries to drive roadmap decisions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/5 flex flex-wrap gap-2">
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Media3 / ExoPlayer</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Feature Specs / PRDs</span>
+            <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-slate-300">Stakeholder Alignment</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="py-20 px-6 border-t border-white/5 bg-slate-950/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 reveal">
+        <span class="text-xs font-mono uppercase tracking-widest text-indigo-400 block mb-2">Prototypes &amp; Research</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="text-xs font-mono text-sky-400 bg-sky-500/10 border border-sky-500/20 px-3 py-1 rounded-full">October 2023</span>
+              <i data-lucide="sparkles" class="w-5 h-5 text-sky-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Smart Seeking in Android Playback</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Prototyped voice-based seeking by actor, scene, dialogue, or genre, demonstrating product thinking in natural-language UX for media consumption.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-sky-300">Java</span>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-sky-300">Android</span>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-sky-300">ExoPlayer</span>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-sky-300">NLU</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between reveal reveal-delay-1">
+          <div>
+            <div class="flex items-center justify-between gap-4 mb-4">
+              <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full">April 2022</span>
+              <i data-lucide="zap" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">A Game Theoretic Approach for Optimal Allocation of Loading in Smart Grid</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              Proposed a methodology for optimal placement of distributed generation in smart grids, balancing system performance and cost efficiency.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-emerald-300">Game Theory</span>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-emerald-300">MATLAB</span>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-emerald-300">Simulink</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 reveal">
+        <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 block mb-2">Academic Foundation</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Education</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- University of Virginia (UVA) -->
+        <div class="glass-card rounded-2xl p-7 flex items-start gap-5 reveal">
+          <!-- Dynamic Logo Loader for UVA -->
+          <div class="w-16 h-16 rounded-2xl logo-badge flex items-center justify-center p-2.5 shrink-0 overflow-hidden" data-logo-folder="UVA" data-fallback-icon="graduation-cap">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-orange-400"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+              <span class="text-xs font-mono text-orange-400 bg-orange-500/10 border border-orange-500/20 px-2.5 py-0.5 rounded">August 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mt-1">University of Virginia</h3>
+            <p class="text-sm font-medium text-slate-300 mt-1">Product Management Specialization</p>
+          </div>
+        </div>
+
+        <!-- NIT Nagpur (VNIT) -->
+        <div class="glass-card rounded-2xl p-7 flex items-start gap-5 reveal reveal-delay-1">
+          <!-- Dynamic Logo Loader for VNIT -->
+          <div class="w-16 h-16 rounded-2xl logo-badge flex items-center justify-center p-2.5 shrink-0 overflow-hidden" data-logo-folder="VNIT" data-fallback-icon="landmark">
+            <i data-lucide="landmark" class="w-8 h-8 text-sky-400"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+              <span class="text-xs font-mono text-sky-400 bg-sky-500/10 border border-sky-500/20 px-2.5 py-0.5 rounded">July 2018 &ndash; May 2022</span>
+              <span class="text-xs font-mono text-slate-400">Nagpur, Maharashtra</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mt-1">NIT Nagpur (Visvesvaraya National Institute of Technology)</h3>
+            <p class="text-sm font-medium text-slate-300 mt-1">Bachelor of Technology (B.Tech.) in Electrical and Electronics Engineering</p>
+            <div class="mt-3 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-300">
+              <span>CGPA: 8.52 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Technologies Section -->
+  <section id="skills" class="py-20 px-6 border-t border-white/5 bg-slate-950/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 reveal">
+        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 block mb-2">Capabilities &amp; Stack</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Skills &amp; Technologies</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product & Strategy -->
+        <div class="glass-card rounded-2xl p-6 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">Product &amp; Strategy</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">0&rarr;1 Initiatives</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Roadmap Prioritization</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">User Stories</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Acceptance Criteria</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Sprint Planning</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">PRD</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">HLD/LLD</span>
+          </div>
+        </div>
+
+        <!-- PM Tools & Analytics -->
+        <div class="glass-card rounded-2xl p-6 reveal reveal-delay-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/15 text-indigo-400 flex items-center justify-center">
+              <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">PM Tools &amp; Analytics</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Jira</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Agile</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Figma</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Google Analytics</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Funnel Analytics</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Market Research</span>
+          </div>
+        </div>
+
+        <!-- Observability & Dashboards -->
+        <div class="glass-card rounded-2xl p-6 reveal reveal-delay-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center">
+              <i data-lucide="activity" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">Observability &amp; Dashboards</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Firebase Performance Monitoring</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Crashlytics</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Firebase Analytics</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">RTR (Real-Time Reporting)</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Grafana</span>
+          </div>
+        </div>
+
+        <!-- AI & Automation -->
+        <div class="glass-card rounded-2xl p-6 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center">
+              <i data-lucide="brain-circuit" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">AI &amp; Automation</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">LLM Integration</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">RAG Pipelines</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">MCP</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Prompt Engineering</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">LLM Log Analysis</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Automated RCA</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Whisper</span>
+          </div>
+        </div>
+
+        <!-- Android & Platform -->
+        <div class="glass-card rounded-2xl p-6 reveal reveal-delay-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-rose-500/15 text-rose-400 flex items-center justify-center">
+              <i data-lucide="tv" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">Android &amp; Platform</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Android TV</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">STB</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">OTT</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">AOSP</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Audio HAL</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Media3/ExoPlayer</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Voice Path</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Matter/Thread</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">AIDL</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">HIDL</span>
+          </div>
+        </div>
+
+        <!-- Engineering & Testing Tools -->
+        <div class="glass-card rounded-2xl p-6 reveal reveal-delay-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-cyan-500/15 text-cyan-400 flex items-center justify-center">
+              <i data-lucide="terminal" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-white">Engineering, Testing &amp; Tools</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Java</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Kotlin</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">C / C++</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Spring Boot</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Docker</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">MongoDB</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">SQL</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">REST APIs</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">OOPs / SOLID / DSA</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">JUnit / Mockito</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">CI/CD &amp; Jenkins</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Android Studio</span>
+            <span class="text-xs px-2.5 py-1.5 rounded-lg bg-white/5 text-slate-200 border border-white/5">Git / GitHub / Gradle / VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-14 px-6 border-t border-white/10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="text-lg font-bold text-white">Srikanth BLV</div>
+        <p class="text-sm text-slate-400 mt-1">Product Engineer &bull; Bengaluru, India</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-sm text-slate-300">
+        <a href="mailto:blv.srikanth@gmail.com" class="hover:text-sky-400 transition-colors flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>blv.srikanth@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/srikanthviswanath" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors flex items-center gap-2">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://srikvis.github.io/srikanth.blv.github.io/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors flex items-center gap-2">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts: Icons, Scroll Reveal, Counters, & Auto-Logo Discovery -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Reveal Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Animated Metric Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          const duration = 1400;
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out quart
+            const ease = 1 - Math.pow(1 - progress, 4);
+            el.textContent = Math.round(target * ease);
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              el.textContent = target;
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    counters.forEach(c => counterObserver.observe(c));
+
+    // Dynamic Folder Logo Loader
+    // Automatically checks assets/<Folder Name>/logo.{png,svg,jpg,jpeg,webp}
+    document.querySelectorAll('[data-logo-folder]').forEach(container => {
+      const folder = container.getAttribute('data-logo-folder');
+      const extensions = ['png', 'svg', 'jpg', 'jpeg', 'webp'];
+      let idx = 0;
+
+      function tryLoadNext() {
+        if (idx >= extensions.length) return; // Keep clean fallback icon
+        const ext = extensions[idx++];
+        const img = new Image();
+        img.src = `assets/${encodeURIComponent(folder)}/logo.${ext}`;
+        img.alt = `${folder} logo`;
+        img.className = 'w-full h-full object-contain';
+        img.onload = () => {
+          container.innerHTML = '';
+          container.appendChild(img);
+        };
+        img.onerror = tryLoadNext;
+      }
+
+      tryLoadNext();
+    });
+  </script>
 </body>
 </html>
+Processed and analysed in code
